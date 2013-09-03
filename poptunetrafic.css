@@ -1,5 +1,5 @@
 #stp-bg{
-	display:none; 
+	display:none;
 	position:fixed;
 	_position:absolute; /* hack for IE 6*/
 	height:100%;
