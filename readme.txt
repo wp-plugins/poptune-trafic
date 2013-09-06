@@ -4,9 +4,9 @@ Donate link: http://www.trafictune.com
 Plugin Script: poptunetrafic.php
 Plugin URI: http://www.trafictune.com
 Tags: WordPress popup, popup, popups, imblocable, optin, pop-up, optin popup, popup plein écran, pop plein écran, popup pleine page, fenêtre pop-up, boîte contextuelle, onclick popup, message contextuel, LinkedIn, Google, Facebook, Twitter, mailchimp, contact permanent, wjsija, admin, message, messages, page, pages, courriel, widget, tableau de bord, shortcode
-Requires at least: 0.1.2
-Tested up to: 0.1.2
-Stable tag: 0.1.2
+Requires at least: 3.3
+Tested up to: 3.5
+Stable tag: 1.2.5
 License: GPLv2
                 
 D&eacute;couvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d'utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn ! Rendre votre trafic travaillent pour vous ! G&eacute;n&eacute;rer des tonnes de trafic des sites de m&eacute;dias sociaux et backlinks rapidement et facilement.
@@ -25,7 +25,7 @@ Twitter, Facebook, Google+ et maintenant LinkedIn !
 
 Inclus une tutoriels vid&eacute;o &eacute;tape par &eacute;tape qui peuvent vous aider utiliser PopTuneTrafic gratuitement.
 
-= PopTuneTrafic Caractéristiques Lite =
+= PopTuneTrafic Caract&eacute;ristiques Lite =
 
 * Int&eacute;gration avec Twitter, Facebook, Google+ et LinkedIn. S&eacute;lectionner vos options, ajoutez votre site et votre ensemble est pr&ecirc;t &agrave; utilis&eacute;.
 * Ce plugin popup pour WordPress vous permettent de changer compl&egrave;tement l'apparence de la fen&ecirc;tre contextuelle cela s'harmonise &agrave; votre site WordPress.
@@ -43,7 +43,7 @@ T&eacute;l&eacute;charger le plugin PopTuneTrafic pour WordPress gratuitement et
 
 2. Activer le plugin via le menu 'Plugins' dans votre site WordPress une fois connect&eacute;.
 
-3. Configurer le plugin en allant dans le menu PopTuneTrafic qui apparaît dans votre menu d'admin ett ajoutez vos options.
+3. Configurer le plugin en allant dans le menu PopTuneTrafic qui apparaît dans votre menu d'admin.
 
 == Changelog ==
 
@@ -53,6 +53,6 @@ T&eacute;l&eacute;charger le plugin PopTuneTrafic pour WordPress gratuitement et
 
 == Screenshots ==
 
-1. PopTuneTrafic Paramètres principaux de la popup.
-2. PopTuneTrafic Apperçu de la popup sous WordPress.
-3. PopTuneTrafic Intégration avec la Médiathèque WordPress.
+1. PopTuneTrafic Param&egrave;tres&nbsp; principaux de la popup.
+2. PopTuneTrafic Apper&ccedil;u de la popup sous WordPress.
+3. PopTuneTrafic Int&eacute;gration avec les M&eacute;dia WordPress.
