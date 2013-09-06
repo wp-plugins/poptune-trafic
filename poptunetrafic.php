@@ -4,8 +4,8 @@
 Plugin Name: PopTuneTrafic™ for WordPress
 Plugin Script: poptunetrafic.php
 Plugin URI: http://www.trafictune.com
-Description: Tap into over 1 billion social accounts on Twitter, Facebook, Google Plus, and now LinkedIn! Make your traffic work for you! Generate tons of social media traffic and backlinks quickly and easily.
-Version: 3.1.1
+Description: Découvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d'utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn ! Rendre votre trafic travaillent pour vous ! Générer des tonnes de trafic des sites de médias sociaux et backlinks rapidement et facilement.
+Version: 0.1.2
 Author: TraficTune.com
 Author URI: http://www.trafictune.com
 
@@ -288,27 +288,16 @@ function stpop_settings_page() {
 <?php } ?>
 
 <center>
- 
-<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td>
+<BR><BR>
 <script type="text/javascript"><!--
 document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
-// --></script><script type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&amp;j=1&amp;code=1378431771935"></script> <iframe onfocus="track_image201.src='http://www.trafictune.com/click.php?a=20&amp;x=TVRNM09EUTFNek0zTWkwM09TNDRNQzR5TkRRdU1UUTI=&amp;z=1&amp;c=1&amp;adurl=1145094&amp;ix=1'" src="http://www.trafictune.com/show_i.php?a=20&amp;x=TVRNM09EUTFNek0zTWkwM09TNDRNQzR5TkRRdU1UUTI=&amp;z=1&amp;c=1&amp;adurl=1145094&amp;target=_blank" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" height="60" scrolling="no" width="468"></iframe>     <img src="http://www.trafictune.com/images/blank.gif" id="track_image201" height="0" width="0">   
-</td>
-      <td>
+// --></script>
+
 <script type="text/javascript"><!--
 document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
-// --></script><script type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&amp;j=1&amp;code=1378431772339"></script><a target="_blank" href="http://www.trafictune.com/click.php?a=76&amp;x=TVRNM09EUTFNek0zTWkwM09TNDRNQzR5TkRRdU1UUTI=&amp;z=26&amp;c=1&amp;adurl=1145095"><img alt="Lancez vos campagnes publicitaires pour Moins de 0.10€ / eCPM!" src="http://www.trafictune.com/banners/76-1-1369120131.jpg" border="0" height="60" width="468"></a>  
-</td>
-    </tr>
-  </tbody>
-</table>
+// --></script>
+<BR><BR>
 
-
-
- 
  </center>
     
     <form method="post" action="options.php">
