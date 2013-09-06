@@ -1,84 +1,84 @@
-@charset "utf-8";
-/* CSS Document */
-
-.tq_wrap{
-	width:650px;
-	border:1px solid #ddd;
-	border-bottom:0;
-	font-family:Arial, Helvetica, sans-serif;
-	margin:15px 0 0 0;
-	-webkit-border-radius: 11px;
-	-moz-border-radius: 11px;
-	border-radius: 11px;
-	margin-bottom:20px;
-}
-
-.tq_heading{
-	background:url(bg.png) top repeat-x #EFEFEF;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:26px;
-	border-bottom:1px solid #ddd;
-	height:70px;
-	line-height:70px;
-}
-
-.tq_heading div{
-	background:url(icon.png) 20px 13px no-repeat;
-	padding:0 0 0 77px;
-}
-
-.tq_option{
-	border-bottom:1px solid #ddd;
-	padding:15px 20px;
-}
-
-.tq_option.alt{
-	background-color:#EFEFEF;
-}
-
-.tq_option.right{
-	text-align:right;
-}
-
-.tq_option label{
-	display:block;
-	background:url(edit.png) left center no-repeat;
-	padding:0 0 0 21px;
-	font-size:14px;
-	color:#21759B;
-	font-weight:bold;
-	line-height:16px;
-	height:16px;
-}
-
-.tq_option select, .tq_option .field{
-	padding:5px;
-	color:#333;
-	background:#f3f3f3;
-	border:1px solid #ddd;
-	margin:10px 0px;
-}
-
-.tq_option select{
-	width:250px;
-}
-
-.tq_option .field{
-	width:380px;
-}
-
-.tq_option textarea{
-	width:420px;
-	padding:5px;
-	color:#333;
-	background:#f3f3f3;
-	border:1px solid #ddd;
-	margin:10px 0px;
-	font-size:10px;
-}
-
-.tq_description{
-	color:#9F9F9F;
-	font-size:12px;
-	font-weight:bold;
+@charset "utf-8";
+/* CSS Document */
+
+.tq_wrap{
+	width:650px;
+	border:1px solid #ddd;
+	border-bottom:0;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:15px 0 0 0;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	margin-bottom:20px;
+}
+
+.tq_heading{
+	background:url(bg.png) top repeat-x #EFEFEF;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:26px;
+	border-bottom:1px solid #ddd;
+	height:70px;
+	line-height:70px;
+}
+
+.tq_heading div{
+	background:url(icon.png) 20px 13px no-repeat;
+	padding:0 0 0 77px;
+}
+
+.tq_option{
+	border-bottom:1px solid #ddd;
+	padding:15px 20px;
+}
+
+.tq_option.alt{
+	background-color:#EFEFEF;
+}
+
+.tq_option.right{
+	text-align:right;
+}
+
+.tq_option label{
+	display:block;
+	background:url(edit.png) left center no-repeat;
+	padding:0 0 0 21px;
+	font-size:14px;
+	color:#21759B;
+	font-weight:bold;
+	line-height:16px;
+	height:16px;
+}
+
+.tq_option select, .tq_option .field{
+	padding:5px;
+	color:#333;
+	background:#f3f3f3;
+	border:1px solid #ddd;
+	margin:10px 0px;
+}
+
+.tq_option select{
+	width:250px;
+}
+
+.tq_option .field{
+	width:380px;
+}
+
+.tq_option textarea{
+	width:420px;
+	padding:5px;
+	color:#333;
+	background:#f3f3f3;
+	border:1px solid #ddd;
+	margin:10px 0px;
+	font-size:10px;
+}
+
+.tq_description{
+	color:#9F9F9F;
+	font-size:12px;
+	font-weight:bold;
 }
