@@ -4,8 +4,8 @@ Donate link: http://www.trafictune.com
 Plugin Script: poptunetrafic.phpPlugin URI: http://www.trafictune.com
 Tags: WordPress popup, popup, popups, imblocable, optin, pop-up, optin popup, popup plein écran, pop plein écran, popup pleine page, fenêtre pop-up, boîte contextuelle, onclick popup, message contextuel, LinkedIn, Google, Facebook, Twitter, mailchimp, contact permanent, wjsija, admin, message, messages, page, pages, courriel, widget, tableau de bord, shortcode
 Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.2.5
+Tested up to: 3.6
+Stable tag: 0.1.2
 License: GPLv2
                 
 D&eacute;couvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d'utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn ! Rendre votre trafic travaillent pour vous ! G&eacute;n&eacute;rer des tonnes de trafic des sites de m&eacute;dias sociaux et backlinks rapidement et facilement.
