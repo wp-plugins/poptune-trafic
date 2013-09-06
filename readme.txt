@@ -8,38 +8,37 @@ Tested up to: 0.1.2
 Stable tag: 0.1.2
 License: GPLv2
                 
-Découvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d'utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn ! Rendre votre trafic travaillent pour vous ! Générer des tonnes de trafic des sites de médias sociaux et backlinks rapidement et facilement.
+D&eacute;couvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d'utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn ! Rendre votre trafic travaillent pour vous ! G&eacute;n&eacute;rer des tonnes de trafic des sites de m&eacute;dias sociaux et backlinks rapidement et facilement.
 
 == Description ==
 
 = PopTuneTrafic WordPress Plugin =
 
-PopTuneTrafic est un plugin popup pour WordPress et c'est probablement le meilleur moyen au monde pour vous de créer un popup suralimenté et imblocable sur WordPress pour faire croître le trafic de votre site web et votre nombre de backlinks rapidement et facilement! PopTuneTrafic est un plugin popup gratuit pour WordPress et pour les personnes qui veulent avoir un trafic illimitée sur leurs sites web gratuitement, avec la possibilité d'être hautement créatif sans avoir à connaître comment faire son référencement.
+PopTuneTrafic est un plugin popup pour WordPress et c'est probablement le meilleur moyen au monde pour vous de cr&eacute;er un popup suraliment&eacute; et imblocable sur WordPress pour faire cro&icirc;tre le trafic de votre site web et votre nombre de backlinks rapidement et facilement! PopTuneTrafic est un plugin popup gratuit pour WordPress et pour les personnes qui veulent avoir un trafic illimit&eacute;e sur leurs sites web gratuitement, avec la possibilit&eacute; d'&ecirc;tre hautement cr&eacute;atif sans avoir &agrave; conna&icirc;tre comment faire son r&eacute;f&eacute;rencement.
 
 = PopTuneTrafic Social PopUp =
 Twitter, Facebook, Google+ et maintenant LinkedIn !
 
-Inclus une tutoriels vidéo étape par étape qui peuvent vous aider utiliser PopTuneTrafic gratuitement.
+Inclus une tutoriels vid&eacute;o &eacute;tape par
+&eacute;tape qui peuvent vous aider utiliser PopTuneTrafic.
 
-= PopTuneTrafic Caractéristiques Lite =
+= PopTuneTrafic Caract&eacute;ristiques Lite =
 
-* Intégration avec Twitter, Facebook, Google+ et LinkedIn. 
-* Ce plugin popup pour WordPress vous permettent de changer complètement l'apparence.
+* Int&eacute;gration avec Twitter, Facebook, Google+ et LinkedIn. 
+* Ce plugin popup vous permettent de changer compl&egrave;tement d'apparence.
 * Changer les images, fond, bordures, tailles de police de popup et bien plus encore.
-* Stade WYSIWYG et aperçu permettant une personnalisation facile avec zéro codage.
+* Stade WYSIWYG et aper&ccedil;u permettant une personnalisation facile avec z&eacute;ro codage.
 * Charger la popup autant de fois que vous souhaitez qui s'affiche, ou une fois par session.
 
-Il est super facile d'ajouter des images ou changer votre bouton d'appel à l'action sur votre popup WordPress avec la bibliothèque de médias de WordPress. Images et boutons d'appel à l'action peuvent être redimensionnés.
+Il est super facile d'ajouter des images ou changer votre bouton d'appel &agrave; l'action sur votre popup WordPress avec la biblioth&egrave;que de &eacute;dias de WordPress. Images et boutons d'appel &agrave; l'action peuvent &ecirc;tre redimensionn&eacute;s.
 
-Télécharger le plugin PopTuneTrafic pour WordPress gratuitement et augmenter le tarif de vos produits et serices des aujourd'hui !
+T&eacute;l&eacute;charger le plugin PopTuneTrafic pour WordPress gratuitement et augmenter le tarif de vos produits et serices des aujourd'hui !
 
 == Installation ==
 
-1. Télécharger le ficher 'PopTuneTrafic.zip' sur votre site Wordpress dans le répertoire: '/wp-content/plugins/' 
-
-2. Activer le plugin via le menu 'Plugins' dans votre site web WordPress une fois que vous être connecté.
-
-3. Configurer le plugin en allant dans le menu PopTuneTrafic qui apparaît dans votre menu d'admin WordPress
+1. T&eacute;l&eacute;charger le ficher 'PopTuneTrafic.zip' sur votre site Wordpress dans le r&eacute;pertoire: '/wp-content/plugins/' 
+2. Activer le plugin via le menu 'Plugins' dans votre site web WordPress une fois connect&eacute;.
+3. Configurer le plugin en allant dans le menu PopTuneTrafic qui appara&icirc;t dans votre menu d'admin.
 
 == Changelog ==
 
@@ -49,6 +48,6 @@ Télécharger le plugin PopTuneTrafic pour WordPress gratuitement et augmenter le 
 
 == Screenshots ==
 
-1. PopTuneTrafic Paramètres principaux de la popup.
-2. PopTuneTrafic Apperçu de la popup sous WordPress.
-3. PopTuneTrafic Intégration avec la Médiathèque WordPress.
+1. PopTuneTrafic Param&egrave;tres principaux de la popup.
+2. PopTuneTrafic Apper&ccedil;u de la popup sous WordPress.
+3. PopTuneTrafic Int&eacute;gration avec la M&eacute;diath&egrave;que WordPress.
