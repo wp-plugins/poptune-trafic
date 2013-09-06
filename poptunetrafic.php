@@ -1,21 +1,21 @@
 <?php 
 
 /*
-Plugin Name: PopTuneTrafic™ for WordPress
+Plugin Name: PopTuneTrafic - WordPress Social PopUp
 Plugin Script: poptunetrafic.php
 Plugin URI: http://www.trafictune.com
-Description: Découvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d'utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn ! Rendre votre trafic travaillent pour vous ! Générer des tonnes de trafic des sites de médias sociaux et backlinks rapidement et facilement.
-Version: 0.1.2
-Author: TraficTune.com
-Author URI: http://www.trafictune.com
+Description: Découvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d’utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn !
+Version: 3.1.2
+Author: Abdellah
+Author URI: http://www.media-infoproduit.com
 
---- THIS PLUGIN AND ALL FILES INCLUDED ARE COPYRIGHT © TRAFICTUNE 2011. 
-YOU MAY NOT MODIFY, RESELL, DISTRIBUTE, OR COPY THIS CODE IN ANY WAY. ---
+--- CE PLUGIN ET TOUS LES FICHIERS INCLUS SONT COPYRIGHT Â © TRAFICTUNE 2011. 
+VOUS NE POUVEZ MODIFIER, REVENDRE, DISTRIBUER OU COPIER CE CODE EN QUELQUE SORTE. ---
 
 */
 
 /*-----------------------------------------------------------------------------------*/
-/*	Define Anything Needed
+/*	Définir quoi que ce soit nécessaire
 /*-----------------------------------------------------------------------------------*/
 
 define('STPOP_LOCATION', WP_PLUGIN_URL . '/'.basename(dirname(__FILE__)));
@@ -40,34 +40,34 @@ if(file_exists(STPOP_PATH.'tc_framework.php')){
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	JS Loader
+/*	Chargeur de JS 
 /*-----------------------------------------------------------------------------------*/
 
 function stpop_jsloader(){
 	
-	// Make sure we are not in the admin section
+	// Veillez à ce que nous ne sommes pas dans la section admin
 	if (!is_admin()) {
 		
-		// Flush the JS
+		// Rincer la JS
 		wp_deregister_script('facebook');
 		wp_deregister_script('twitter');
 		wp_deregister_script('plusone');
 		wp_deregister_script('stp');
 
-		// Register them with fresh calls
+		// Inscrivez-les avec appels frais
 		wp_register_script('facebook', 'http://connect.facebook.net/fr_FR/all.js#xfbml=1', false, '1.0', false);
 		wp_register_script('twitter', 'http://platform.twitter.com/widgets.js', false, '1.0', false);
 		wp_register_script('plusone', 'https://apis.google.com/js/plusone.js', false, '1.0', false);
 		wp_register_script('stp', STPOP_LOCATION.'/stp.js', false, '3.1.0', false);
 
-		// Include them
+		// Incluez-les
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('facebook');
 		wp_enqueue_script('twitter');
 		wp_enqueue_script('plusone');
 		wp_enqueue_script('stp');
 		
-		// Flush, register, enque Traficc Pop CSS
+		// Rincer, Inscrivez, Incluez Trafic Pop CSS
 		wp_deregister_style('stpCSS');
 		wp_register_style('stpCSS', STPOP_LOCATION.'/poptunetrafic.css');
 		wp_enqueue_style('stpCSS');
@@ -77,7 +77,7 @@ function stpop_jsloader(){
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	Clean Message
+/*	Message Propre 
 /*-----------------------------------------------------------------------------------*/
 
 function stpop_cleanMsg($input){
@@ -90,13 +90,13 @@ function stpop_cleanMsg($input){
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	Create Settings Page
+/*	Créer des paramètres de Page
 /*-----------------------------------------------------------------------------------*/
 
 function stpop_create_menu(){
 	
-	// Adds the tab into the options panel in WordPress Admin area
-	$page = add_options_page("PopTuneTrafic Settings", "PopTuneTrafic™", 'administrator', __FILE__, STPOP_SETTINGS);
+	// Ajoute un onglet dans le panneau options dans WordPress Admin
+	$page = add_options_page("Paramètres de la PopUp PopTuneTrafic", "PopTuneTrafic™", 'administrator', __FILE__, STPOP_SETTINGS);
 
 	//call register settings function
 	add_action( 'admin_init', 'stpop_register_settings' );
@@ -117,12 +117,12 @@ function stpop_create_menu(){
 } // End admin style CSS
 
 /*-----------------------------------------------------------------------------------*/
-/*	Display Popup
+/*	Affichager la Popup
 /*-----------------------------------------------------------------------------------*/
 
 function PopTuneTrafic(){
 
-	// Get all of the options required for the popup
+	// Obtenir toutes les options requises pour le popup
 	$stp_title = get_option('stpop-title');
 	$stp_message = esc_textarea(stpop_cleanMsg(get_option('stpop-message')));
 	$stp_google_url = get_option('stpop-google-url');
@@ -138,7 +138,7 @@ function PopTuneTrafic(){
 	$stp_advanced = get_option('stpop-advanced');
 	$stp_onclick = get_option('stpop-onclick');
 		
-	// Only continue if the pop-up option is enabled...
+	// Continuer uniquement si l'option pop-up est activée...
 	if($stp_enabled == 'true'){ ?>
 							
 			<script language="javascript">
@@ -146,7 +146,7 @@ function PopTuneTrafic(){
 				jQuery(document).ready(function() {		
 								
 					jQuery().PopTuneTrafic({
-						// Configure display of popup
+						// Configurer l'affichage de popup
 						title: "<?PHP echo $stp_title; ?>",
 						message: "<?PHP echo $stp_message; ?>",
 						closeable: <?PHP echo $stp_close; ?>,
@@ -170,17 +170,17 @@ function PopTuneTrafic(){
 
 	<?PHP
 		
-	} // End if enabled
+	} // Fin si activée
 		
-} // End main function
+} // Fin de fonction principale
 
 /*-----------------------------------------------------------------------------------*/
-/*	Create Settings
+/*	Créer des paramètres
 /*-----------------------------------------------------------------------------------*/
 
 function stpop_register_settings() {
 	
-	// Register our settings
+	//S'inscrire à nos réglages
 	register_setting( 'stp-settings-group', 'stpop-pages');
 	register_setting( 'stp-settings-group', 'stpop-page-selector');
 	register_setting( 'stp-settings-group', 'stpop-enabled');
@@ -221,7 +221,7 @@ function stpop_register_settings() {
 	register_setting( 'stp-settings-group', 'stpop-title-color' );
 	register_setting( 'stp-settings-group', 'stpop-message-color' );
 	
-	// Apply default options to settings 
+	// Appliquer les options par défaut aux paramètres
 	add_option( 'stpop-opacity', '35' );
 	add_option( 'stpop-advanced', 'false' );
 	add_option( 'stpop-close', 'false' );
@@ -257,15 +257,15 @@ function stpop_register_settings() {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	Show Settings Page
+/*	Voir la Page des paramètres
 /*-----------------------------------------------------------------------------------*/
 
 function stpop_settings_page() {
 		
-    // If the save button is pressed:
+    // Si l'enregistrement touche est ok:
     if( isset($_POST['saveS']) ) {
 		
-        // Save the posted value in the database
+        // Enregistrez la valeur validée dans la base de données
 		update_option('stpop-enabled', $_POST['stpop-enabled']);
 		update_option('stpop-title', $_POST['stpop-title']);
 		update_option('stpop-message', $_POST['stpop-message']);
@@ -280,7 +280,7 @@ function stpop_settings_page() {
 		update_option('stpop-wait', $_POST['stpop-wait']);
 		update_option('stpop-opacity', $_POST['stpop-opacity']);
 		update_option('stpop-onclick', $_POST['stpop-onclick']);
-		// Now we can display the options page HTML:
+		// Maintenant, nous pouvons afficher la page des options HTML:
 ?>
 
         <div class="updated"><p><strong><?php _e('settings saved.', 'menu-test' ); ?></strong></p></div>
@@ -288,7 +288,7 @@ function stpop_settings_page() {
 <?php } ?>
 
 <center>
-<BR><BR>
+<br><br>
 <script type="text/javascript"><!--
 document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
 // --></script>
@@ -296,41 +296,42 @@ document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com
 <script type="text/javascript"><!--
 document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
 // --></script>
-<BR><BR>
+</center><br><br>
 
- </center>
+ 
+<div>
     
     <form method="post" action="options.php">
     <?php settings_fields( 'stp-settings-group' ); ?>
 
-	<div class="tq_heading"><div>PopTuneTrafic Settings</div></div>
+	<div class="tq_heading"><div>Paramètres de la PopUp PopTuneTrafic</div></div>
     
 	<div class="tq_option">
     
-        <label for="stpop-enabled">Enable / Disable Traffic Pop</label>
+        <label for="stpop-enabled">Activer / désactiver la PopUp</label>
 
 			<select name="stpop-enabled" id="stpop-enabled">
-                <option value="true" <?PHP if(get_option('stpop-enabled') == 'true'){echo 'selected="selected"';} ?>>Enabled</option>
-                <option value="false" <?PHP if(get_option('stpop-enabled') == 'false'){echo 'selected="selected"';} ?>>Disabled</option>
+                <option value="true" <?PHP if(get_option('stpop-enabled') == 'true'){echo 'selected="selected"';} ?>>Activer</option>
+                <option value="false" <?PHP if(get_option('stpop-enabled') == 'false'){echo 'selected="selected"';} ?>>Désactiver</option>
 			</select>
 
-		<div class="tq_description">Turn on / off the Facebook Traffic Pop.</div> 
+		<div class="tq_description">Activer / désactiver la PopUp Facebook.</div> 
         
     </div>
 
     <div class="tq_option alt">
     
-        <label for="stpop-title">Popup Title</label>
+        <label for="stpop-title">Titre de la popup</label>
 
 		<input class="field" name="stpop-title" type="text" id="stpop-title" value="<?php echo get_option('stpop-title'); ?>" />
                         
-        <div class="tq_description">Title / titlebar text of your popup.</div>
+        <div class="tq_description">Titre / texte de barre et titre de votre popup.</div>
         
     </div>
     
     <div class="tq_option">
     
-        <label for="stpop-message">Popup Message</label><br />
+        <label for="stpop-message">Message contextuel</label><br />
 
         <?PHP
 		
@@ -338,116 +339,116 @@ document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com
 			
 		?>
         
-        <br /><div class="tq_description">The message you want to show inside your popup.</div>
+        <br /><div class="tq_description">Le message que vous souhaitez afficher à l'intérieur de votre popup.</div>
 
     </div>
 
     <div class="tq_option alt">
     
-        <label for="stpop-google-url">Google '+1' URL</label>
+        <label for="stpop-google-url">URL « +1 » pour Google</label>
 
 		<input class="field" name="stpop-google-url" type="text" id="stpop-google-url" value="<?php echo get_option('stpop-google-url'); ?>" />
         
-        <div class="tq_description">The URL you want to be +1'ed or shared on Google.</div>
+        <div class="tq_description">L'URL que vous voulez être 1'ed ou partagé sur Google.</div>
         
     </div>
 
     <div class="tq_option">
     
-        <label for="stpop-fb-url">Facebook 'Like' URL</label>
+        <label for="stpop-fb-url">URL « J'aime » pour Facebook</label>
 
 		<input class="field" name="stpop-fb-url" type="text" id="stpop-fb-url" value="<?php echo get_option('stpop-fb-url'); ?>" />
         
-        <div class="tq_description">The URL you want to 'Like' on Facebook when the Like button is pressed.</div>
+        <div class="tq_description">L'URL vous la quel vous voulez des « J'aime » sur Facebook lorsque vous appuyez sur le bouton J'aime.</div>
         
     </div>
 
     <div class="tq_option alt">
     
-        <label for="stpop-fb-url">LinkedIn Share URL</label>
+        <label for="stpop-fb-url">URL à partager sur LinkedIn</label>
 
 		<input class="field" name="stpop-linkedin-url" type="text" id="stpop-linkedin-url" value="<?php echo get_option('stpop-linkedin-url'); ?>" />
         
-        <div class="tq_description">Enter the URL you want to use with the LinkedIn Share Button.</div>
+        <div class="tq_description">Entrez l'URL que vous souhaitez utiliser avec le bouton de partage de LinkedIn.</div>
         
     </div>
 
     <div class="tq_option">
     
-        <label for="stpop-twitter-name">Twitter Username</label>
+        <label for="stpop-twitter-name">Nom d'utilisateur Twitter</label>
 
 		<input class="field" name="stpop-twitter-name" type="text" id="stpop-twitter-name" value="<?php echo get_option('stpop-twitter-name'); ?>" />
         
-        <div class="tq_description">The Twitter usename to use with the follow button ex: RealTylerQuinn</div>
+        <div class="tq_description">Le nom d'utilisateur Twitter à utiliser avec le bouton suivre ex : @usename</div>
         
     </div>
 
     <div class="tq_option alt">
     
-        <label for="stpop-twitter-method">Twitter Method</label>
+        <label for="stpop-twitter-method">Méthode de Twitter</label>
 
 			<select name="stpop-twitter-method" id="stpop-twitter-method">
-                <option value="follow" <?PHP if(get_option('stpop-twitter-method') == 'follow'){echo 'selected="selected"';} ?>>Follow Button</option>
-                <option value="tweet" <?PHP if(get_option('stpop-twitter-method') == 'tweet'){echo 'selected="selected"';} ?>>Tweet Button</option>
+                <option value="follow" <?PHP if(get_option('stpop-twitter-method') == 'follow'){echo 'selected="selected"';} ?>>Bouton de suivre</option>
+                <option value="tweet" <?PHP if(get_option('stpop-twitter-method') == 'tweet'){echo 'selected="selected"';} ?>>Bouton de Tweet</option>
 			</select>
         
-        <div class="tq_description">Pick to show either the Tweet button or the Follow button.</div>
+        <div class="tq_description">Choisir de montrer le bouton Tweet ou le bouton suivre.</div>
         
     </div>
     
     <div class="tq_option">
     
-        <label for="stpop-close">Show Close Button</label>
+        <label for="stpop-close">Afficher le bouton fermer</label>
 
 			<select name="stpop-close" id="onoff">
-                <option value="true" <?PHP if(get_option('stpop-close') == 'true'){echo 'selected="selected"';} ?> >Yes</option>
-                <option value="false" <?PHP if(get_option('stpop-close') == 'false'){echo 'selected="selected"';} ?> >No</option>
+                <option value="true" <?PHP if(get_option('stpop-close') == 'true'){echo 'selected="selected"';} ?> >Oui</option>
+                <option value="false" <?PHP if(get_option('stpop-close') == 'false'){echo 'selected="selected"';} ?> >Non</option>
 			</select>
         
-        <div class="tq_description">Enable / Disable the close button.</div>
+        <div class="tq_description">Activer / désactiver le bouton fermer.</div>
         
     </div>
 
     <div class="tq_option alt">
     
-        <label for="stpop-advanced">Advanced Close Features</label>
+        <label for="stpop-advanced">Proche de fonctionnalités avancées</label>
 
 			<select name="stpop-advanced" id="onoff">
-                <option value="true" <?PHP if(get_option('stpop-advanced') == 'true'){echo 'selected="selected"';} ?>>Enabled</option>
-                <option value="false" <?PHP if(get_option('stpop-advanced') == 'false'){echo 'selected="selected"';} ?>>Disabled</option>
+                <option value="true" <?PHP if(get_option('stpop-advanced') == 'true'){echo 'selected="selected"';} ?>>Activé</option>
+                <option value="false" <?PHP if(get_option('stpop-advanced') == 'false'){echo 'selected="selected"';} ?>>Déactivé</option>
 			</select>
         
-        <div class="tq_description">If enabled, users can close the popup by pressing the escape key or clicking outside of the popup.</div>
+        <div class="tq_description">Si activé, les utilisateurs peuvent fermer le popup en appuyant sur la touche ESC ou en cliquant à l'extérieur de la fenêtre contextuelle.</div>
         
     </div>
 
     <div class="tq_option">
     
-        <label for="stpop-countdown">Countdown Length</label>
+        <label for="stpop-countdown">Durée du compte à rebours</label>
 
 		<input class="field" name="stpop-countdown" type="text" id="stpop-countdown" value="<?php echo get_option('stpop-countdown'); ?>" />
         
-        <div class="tq_description">The amount of time (in seconds) the timer should run for before closing the popup.</div>
+        <div class="tq_description">La quantité de temps (en secondes) que la minuterie doit s'exécuter avant de fermer la fenêtre contextuelle.</div>
         
     </div>
 
     <div class="tq_option alt">
     
-        <label for="stpop-wait">Wait Timer</label>
+        <label for="stpop-wait">Attendre la minuterie</label>
 
 		<input class="field" name="stpop-wait" type="text" id="stpop-wait" value="<?php echo get_option('stpop-wait'); ?>" />
         
-        <div class="tq_description">The number of minuets STP should wait before showing the popup again.</div>
+        <div class="tq_description">Le nombre des menuets que STP doit attendre avant d'afficher la PopUp contextuel de nouveau.</div>
         
     </div>
 
     <div class="tq_option">
     
-      <label for="stpop-opacity">Background Opacity</label>
+      <label for="stpop-opacity">Opacité de l'arrière-plan</label>
 
 		<input class="field" name="stpop-opacity" type="text" id="stpop-opacity" value="<?php echo get_option('stpop-opacity'); ?>" />
         
-        <div class="tq_description">Background / page shadow opacity. Default is 35</div>
+        <div class="tq_description">Fond / page d'opacité de l'ombre. Valeur par défaut est 35</div>
         
     </div>
 
@@ -457,21 +458,21 @@ document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com
 
 		<input class="field" name="stpop-onclick" type="text" id="stpop-onclick" value="<?php echo get_option('stpop-onclick'); ?>" />
         
-        <div class="tq_description">Enter the class to use with onClick. Any element clicked with this class will open the popup.</div>
+        <div class="tq_description">Entrer dans la classe à utiliser avec onClick. N'importe quel élément cliqué avec cette classe va ouvrir la popup.</div>
         
     </div>
 
     <div class="tq_option">
     
-        <div class="tq_description"><a href="http://developers.facebook.com/docs/reference/plugins/like/" target="_blank">Click here to generate Open Graph tags.</a></div> 
+        <div class="tq_description"><a href="http://developers.facebook.com/docs/reference/plugins/like/" target="_blank">Cliquez ici pour générer des balises Open Graph.</a></div> 
 		
-        <div class="tq_description">If you want Facebook to display a title, description, and cusomtized image / icon in people's profile streams you need to apply OpenGraph metatags to the url that your are likeing. </div>
+        <div class="tq_description">Si vous souhaitez que Facebook affiche une image de titre, description et pérsonalisé une icône dans le profil du peuple vous devez appliquer un code metatags et OpenGraph vers les url que vous souhaitez utilisé. </div>
         
     </div>        
 
     <div class="tq_option alt right">
     
-        <input type="submit" name="settingsBtn" id="settingsBtn" class="button-primary" value="<?php _e('Save Changes') ?>" />
+        <input type="submit" name="settingsBtn" id="settingsBtn" class="button-primary" value="<?php _e('Enregistrer les modifications') ?>" />
         
     </div>        
 
@@ -481,19 +482,19 @@ document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com
 
 <?php
 
-}// end settings page
+}// Fin de page de Paramètres 
 
 /*-----------------------------------------------------------------------------------*/
-/*	Start Running Hooks
+/*	Commence à afficher la PopUp
 /*-----------------------------------------------------------------------------------*/
 
-// Add hook to include settings CSS
+// Ajouter une crochet pour inclure les paramètres CSS
 add_action( 'admin_init', 'stpsettings_admin_css' );
-// create custom plugin settings menu
+// créer un menu paramètres de plugin personnalisé
 add_action( 'admin_menu', 'stpop_create_menu' );
-// Run the Js Loader
+// Exécuter le chargeur de Js
 add_action( 'init', STPOP_LOADER );
-// include required files in header
+// inclure les fichiers requis dans l'en-tête
 add_action( 'wp_head', STPOP_FUNCTION );
 
 ?>
