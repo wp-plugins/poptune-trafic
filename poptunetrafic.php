@@ -290,11 +290,11 @@ function stpop_settings_page() {
 <center>
 <br><br>
 <script type="text/javascript"><!--
-document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
+document.write('<s'+'cript type="text/javascript" src="http://www.trafic-tune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
 // --></script>
 
 <script type="text/javascript"><!--
-document.write('<s'+'cript type="text/javascript" src="http://www.trafictune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
+document.write('<s'+'cript type="text/javascript" src="http://www.trafic-tune.com/show.php?z=1,26,27&j=1&code='+new Date().getTime()+'"></s'+'cript>'); 
 // --></script>
 </center><br><br>
 
