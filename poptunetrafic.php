@@ -1,13 +1,13 @@
-<?php 
+﻿<?php 
 
 /*
 Plugin Name: PopTuneTrafic - WordPress Social PopUp
 Plugin Script: poptunetrafic.php
-Plugin URI: http://www.trafictune.com
+Plugin URI: http://www.trafi-ctune.com
 Description: Découvrez comment vous pouvez faire apparaitre votre site web dans les comptes sociaux de plus de 1 milliard d’utilisateurs sur Twitter, Facebook, Google Plus et maintenant LinkedIn !
 Version: 3.1.2
 Author: Abdellah
-Author URI: http://www.media-infoproduit.com
+Author URI: http://www.mediainfoproduit.com
 
 --- CE PLUGIN ET TOUS LES FICHIERS INCLUS SONT COPYRIGHT Â © TRAFICTUNE 2011. 
 VOUS NE POUVEZ MODIFIER, REVENDRE, DISTRIBUER OU COPIER CE CODE EN QUELQUE SORTE. ---

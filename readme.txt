@@ -1,7 +1,7 @@
 === PopTuneTrafic: WordPress Social PopUp ===
 Contributors: PopTuneTrafic
-Donate link: http://www.trafictune.com
-Plugin Script: poptunetrafic.phpPlugin URI: http://www.trafictune.com
+Donate link: http://www.trafic-tune.com
+Plugin Script: poptunetrafic.phpPlugin URI: http://www.trafic-tune.com
 Tags: WordPress popup, popup, popups, imblocable, optin, pop-up, optin popup, popup plein écran, pop plein écran, popup pleine page, fenêtre pop-up, boîte contextuelle, onclick popup, message contextuel, LinkedIn, Google, Facebook, Twitter, mailchimp, contact permanent, wjsija, admin, message, messages, page, pages, courriel, widget, tableau de bord, shortcode
 Requires at least: 3.3
 Tested up to: 3.5
@@ -43,6 +43,7 @@ T&eacute;l&eacute;charger le plugin PopTuneTrafic pour WordPress gratuitement et
 == Changelog ==
 
 = 0.1.2 =
+= 0.1.3 =
 
 * Version initiale
 
